@@ -3,8 +3,9 @@ package com.bitlicon.purolator.fragment;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
-import androidx.core.app.DialogFragment;
 import android.view.LayoutInflater;
+
+import androidx.fragment.app.DialogFragment;
 
 public class DialogoConfirmacionFragment extends DialogFragment {
 

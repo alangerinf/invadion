@@ -3,18 +3,17 @@ package com.bitlicon.purolator.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.core.app.Fragment;
-import androidx.core.app.FragmentManager;
-import androidx.core.app.FragmentStatePagerAdapter;
-import androidx.core.view.ViewPager;
-import androidx.core.view.ViewPager.OnPageChangeListener;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.dao.PedidoDAO;
@@ -143,7 +142,7 @@ public class PedidoActivity extends ControlFragmentActivity {
 
     }
 
-    public class PedidoSlidePagerAdapter extends FragmentStatePagerAdapter implements OnPageChangeListener {
+    public class PedidoSlidePagerAdapter extends FragmentStatePagerAdapter implements ViewPager.OnPageChangeListener {
 
         Cliente cliente;
         public PedidoSlidePagerAdapter(FragmentManager fm, Cliente cliente) {

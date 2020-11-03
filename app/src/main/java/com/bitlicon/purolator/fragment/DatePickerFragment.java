@@ -2,9 +2,8 @@ package com.bitlicon.purolator.fragment;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
-
 import android.os.Bundle;
-import androidx.core.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 import android.widget.DatePicker;
 
 import java.util.Calendar;

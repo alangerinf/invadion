@@ -11,6 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.activity.ResumenActivity;
 import com.bitlicon.purolator.entities.Vendedor;
@@ -142,7 +148,7 @@ public class LineaFragment extends Fragment {
         }
 
         @Override
-        public androidx.core.app.Fragment getItem(int position) {
+        public androidx.fragment.app.Fragment getItem(int position) {
 
             return ImageFragment.getInstance(position);
         }

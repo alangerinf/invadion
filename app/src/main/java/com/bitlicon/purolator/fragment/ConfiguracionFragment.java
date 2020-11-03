@@ -5,8 +5,6 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.os.Handler;
 import android.os.Message;
-import androidx.core.app.DialogFragment;
-import androidx.core.app.Fragment;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -21,6 +19,9 @@ import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.activity.BaseActivity;

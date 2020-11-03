@@ -14,13 +14,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.activity.BaseActivity;
 import com.bitlicon.purolator.adapter.ClienteAdapter;
 import com.bitlicon.purolator.dao.ClienteDAO;
 import com.bitlicon.purolator.entities.Cliente;
-import com.bitlicon.purolator.lib.SessionManager;
 import com.bitlicon.purolator.util.Constantes;
 
 import java.util.ArrayList;

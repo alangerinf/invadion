@@ -1,13 +1,12 @@
 package com.bitlicon.purolator.fragment;
 
 import android.os.Bundle;
-import androidx.core.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.adapter.FacturaAdapter;
 import com.bitlicon.purolator.dao.FacturaDAO;
@@ -15,7 +14,6 @@ import com.bitlicon.purolator.entities.Cliente;
 import com.bitlicon.purolator.entities.Factura;
 import com.bitlicon.purolator.lib.SessionManager;
 import com.bitlicon.purolator.util.Constantes;
-
 import java.util.ArrayList;
 
 public class FacturasPorClienteFragment extends Fragment {

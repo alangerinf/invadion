@@ -1,16 +1,16 @@
 package com.bitlicon.purolator.fragment;
 
 import android.os.Bundle;
-import androidx.core.app.Fragment;
-import androidx.core.app.FragmentManager;
-import androidx.core.app.FragmentStatePagerAdapter;
-import androidx.core.view.ViewPager;
-import androidx.core.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.bitlicon.purolator.R;
 import com.bitlicon.purolator.activity.BaseActivity;
@@ -111,7 +111,7 @@ public class ResumenFragment extends Fragment {
 
     }
 
-    public class ResumenSlidePagerAdapter extends FragmentStatePagerAdapter implements OnPageChangeListener {
+    public class ResumenSlidePagerAdapter extends FragmentStatePagerAdapter implements ViewPager.OnPageChangeListener {
         public ResumenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
