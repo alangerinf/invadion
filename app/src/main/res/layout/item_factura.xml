@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tvLinea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="PUR"
+        android:textColor="@color/celeste" />
+    <TextView
+        android:id="@+id/tvNroFactura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/celeste" />
+
+    <TextView
+        android:id="@+id/tvFechaFactura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/negro" />
+
+    <TextView
+        android:id="@+id/tvImporteFactura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="@color/negro" />
+</LinearLayout>

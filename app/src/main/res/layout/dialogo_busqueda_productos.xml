@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:paddingTop="10dp">
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/editext_estilo"
+        android:hint="Nombre de Producto"
+        android:drawableRight="@android:drawable/ic_btn_speak_now"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/lnPrimerBoton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtCodigo"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:id="@+id/lblPromocion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Ofertas"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblNuevo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Nuevos"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblTop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Top XX"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblKits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Kits"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblPacks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Packs"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnSegundoBoton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lnPrimerBoton"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:id="@+id/lblAF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="AF"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblAFP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="AFP"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblFCO"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="FCO"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblPER"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="PER"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnTerceBoton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lnSegundoBoton"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:id="@+id/lblFCA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="FCA"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblEP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="EP"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblPC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="PC"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblPP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="PP"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnCuartoBoton"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lnTerceBoton"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:id="@+id/lblPFC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="PFC"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblFF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="FF"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblFL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="FL"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/lblFA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="FA"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnCuartoBoton"
+        android:layout_marginBottom="46dp"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:orientation="vertical">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/lblBuscar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/azul"
+            android:gravity="center"
+            android:text="Buscar"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

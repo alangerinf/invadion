@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="invadion_purolator-purolator-cliente-1-android-f86ef26878dc/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/invadion_purolator-purolator-cliente-1-android-f86ef26878dc.iml" filepath="$PROJECT_DIR$/.idea/modules/invadion_purolator-purolator-cliente-1-android-f86ef26878dc.iml" group="invadion_purolator-purolator-cliente-1-android-f86ef26878dc" />
+    </modules>
+  </component>
+</project>

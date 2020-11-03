@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blanco"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnPedidos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtPedidos"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="Ped. Facturado"
+                android:textColor="@color/plomomenu"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lnPedidosFranja"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+
+                android:layout_gravity="bottom"
+                android:background="@color/rojo"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnCobranza"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtCobranza"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/cobranza"
+                android:textColor="@color/plomomenu"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lnCobranzaFranja"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+
+                android:layout_gravity="bottom"
+                android:background="@color/rojo"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/plomo"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

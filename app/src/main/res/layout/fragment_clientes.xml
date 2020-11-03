@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blanco"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnRutaCliente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtRutaTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/ruta"
+                    android:textColor="@color/plomomenu"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lnRutaFranja"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+
+                    android:layout_gravity="bottom"
+                    android:background="@color/rojo"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnGeneralCliente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtGeneralTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/general"
+                    android:textColor="@color/plomomenu"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lnGeneralFranja"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+
+                    android:layout_gravity="bottom"
+                    android:background="@color/rojo"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnNuevoCliente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNuevoTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/nuevos"
+                    android:textColor="@color/plomomenu"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lnNuevoFranja"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+
+                    android:layout_gravity="bottom"
+                    android:background="@color/rojo"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerClientes"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/plomo"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

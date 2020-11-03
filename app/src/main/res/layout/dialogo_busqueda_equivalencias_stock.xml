@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCodigo"
+            android:hint="Código"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/lblBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Buscar"
+            android:background="@color/azul"
+            android:textColor="@color/blanco"
+            android:visibility="gone"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cod. Original"
+                android:textColor="@color/negro"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Marca"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cod. Purolator"
+                android:textColor="@color/negro"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstEquivalencias"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="@null"
+            android:orientation="vertical">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/plomo_oscuro"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCancelar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/cancelar"
+                    android:textColor="@color/blanco"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/lblAceptar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Buscar"
+                    android:background="@color/azul"
+                    android:textColor="@color/blanco"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

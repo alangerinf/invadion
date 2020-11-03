@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/plomo"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/editext_estilo"
+        android:hint="Cantidad Productos"
+        android:inputType="number"
+        android:maxLength="5"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/llPrecios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCantidad"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Precios"
+                android:textColor="@color/negro"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RadioButton
+                    android:id="@+id/radio_precio_lista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:checked="true"
+                    android:padding="0dp"
+                    android:text="Precio Lista"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_precio_oficina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Precio Oficina"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_precio_lima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Precio Lima"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_precio_norte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Precio Norte"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descuento1"
+                android:id="@+id/cbDescuento1"
+                android:checked="true"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descuento2"
+                android:id="@+id/cbDescuento2"
+                android:checked="true"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descuento3"
+                android:id="@+id/cbDescuento3"
+                android:checked="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/llPrecios"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/lblCancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Cancelar"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/lblAgregar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/azul"
+            android:gravity="center"
+            android:text="Agregar"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

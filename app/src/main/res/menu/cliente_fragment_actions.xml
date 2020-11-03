@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BaseActivity">
+    <item
+        android:id="@+id/action_search_general"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_buscar"
+        android:showAsAction="ifRoom"
+        android:title="@string/buscar" />
+    <item
+        android:id="@+id/action_busqueda_general"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="Búsqueda Avanzada" />
+    <item
+        android:id="@+id/action_ordenar_nombre_general"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="Ordenar por Nombre" />
+    <item
+        android:id="@+id/action_ordenar_codigo_general"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="Ordenar por Código" />
+
+    <item
+        android:id="@+id/action_ruta_general"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="Escoger Ruta" />
+
+</menu>

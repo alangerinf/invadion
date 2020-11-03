@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+
+    <TextView
+        android:id="@+id/txtNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre Cliente"
+        android:textColor="@color/negro"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtCodigoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Código Cliente"
+        android:textColor="@color/plomo_oscuro"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/txtNumero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="14"
+            android:gravity="left"
+            android:text="N° Documento"
+            android:textColor="@color/celeste" />
+
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:text="T"
+            android:textColor="@color/celeste" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="8"
+            android:gravity="left"
+            android:text="F. Vcto."
+            android:textColor="@color/celeste" />
+
+
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:text="Saldo"
+            android:textColor="@color/celeste" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="No hay deudas" />
+
+
+
+    <ListView
+
+        android:id="@+id/lvDeudas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/plomo"
+        android:divider="@null"
+        android:orientation="vertical"
+        >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgCorreo"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_search" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLlamada"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_clear" />
+
+    </LinearLayout>
+
+</LinearLayout>

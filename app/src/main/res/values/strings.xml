@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lee Filter</string>
+    <string name="name_company">Lee Filter del Perú</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+
+    <string name="fecha_origen">Fecha: </string>
+    <string name="clientes">Clientes</string>
+    <string name="deudatotal">Deuda Total</string>
+    <string name="deudacorriente">D.Corriente</string>
+    <string name="deudamorosa">D.Morosa</string>
+    <string name="deudanovencida">D.Letras No Vencidas</string>
+    <string name="deudavencida">D.Letras Vencidas</string>
+    <string name="resumen">Resumen</string>
+    <string name="stock">Stock</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configurar</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="configuracion">Configuracion</string>
+
+    <string name="ruta">RUTA</string>
+    <string name="general">GENERAL</string>
+    <string name="nuevos">NUEVOS</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="filtrar_deuda">Filtrar Deuda</string>
+    <string name="busqueda_avanzada">Búsqueda avanzada</string>
+    <string name="escoger_ruta">Escoger ruta</string>
+    <string name="ordenar_por_nombre">Ordenar por nombre</string>
+    <string name="ordenar_por_codigo">Ordenar por código</string>
+    <string name="sincronizar">Sincronizar</string>
+    <string name="txtConfiguracion">Configuración</string>
+    <string name="txtSalir">Salir</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="nuevo_pedido">Nuevo Pedido</string>
+    <string name="facturas">Facturas</string>
+    <string name="pedido">PEDIDO</string>
+    <string name="condicion">CONDICIÓN</string>
+
+    <string name="campos_requeridos_login">Debe ingresar usuario y contraseña</string>
+    <string name="esta_seguro">¿Está seguro de eliminar el cliente?</string>
+    <string name="esta_seguro_salir">¿Está seguro de salir de la aplicación?</string>
+
+    <string name="guardar_cliente">¿Desea guardar el cliente?</string>
+    <string name="guardar_cambios_cliente">¿Desea guardar los cambios realizados?</string>
+    <string name="eliminar_uno">¿Desea eliminar el cliente seleccionado?</string>
+    <string name="eliminar_masivo">¿Desea eliminar los X clientes seleccionados?</string>
+    <string name="confirmacion">Confirmación</string>
+
+    <string name="error_titulo">Alerta</string>
+    <string name="cobranza">Cobranzas</string>
+    <string name="nuevocliente">Nuevo Cliente</string>
+    <string name="razon_social">Nombre o Razón Social</string>
+    <string name="direccion_fiscal">Dirección Fiscal / Distrito</string>
+    <string name="direccion_despacho">Dirección Despacho / Distrito</string>
+    <string name="nro_ruc">N° de RUC</string>
+    <string name="credenciales_invalidas">Credenciales inválidas</string>
+    <string name="servicio_no_disponible">Servicio no disponible</string>
+    <string name="error_servicio">Error en el servicio</string>
+
+    <string name="celular">RPM/RPC/CEL/FIJO/ETC</string>
+    <string name="correo">Correo</string>
+    <string name="dni">N° de DNI</string>
+    <string name="giro_negocio">Giro de Negocio</string>
+    <string name="representante_legal">Representante Legal</string>
+    <string name="contacto">Contacto</string>
+    <string name="ficha_registro">Ficha de Registro de Cliente</string>
+    <string name="nombres">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="ruc">RUC</string>
+    <string name="dni_solo">DNI</string>
+    <string name="codigo">Código</string>
+    <string name="codigo_2">Código: </string>
+    <string name="precio_soles">P.Soles: </string>
+    <string name="precio_dolares">P.Dolares: </string>
+    <string name="stock_stock">Stock: </string>
+    <string name="nombre">Nombre: </string>
+    <string name="campo_de_busqueda">Campo de búsqueda</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="anular_pedido">Anular Pedido</string>
+    <string name="buscar">Buscar</string>
+    <string name="descuento1">Descuento 1</string>
+    <string name="descuento2">Descuento 2</string>
+    <string name="descuento3">Descuento 3</string>
+    <string name="idireccion">Ingresar dirección</string>
+    <string name="itelefono">Ingresar teléfono</string>
+    <string name="icantidad">Ingresar cantidad</string>
+    <string name="iprecio">Ingresar precio</string>
+    <string name="precio_mayor_cero">El precio debe ser mayor a cero</string>
+    <string name="vcorreo">Correo no válido</string>
+    <string name="vRUC">RUC: Ingresar 11 números</string>
+    <string name="vDNI">DNI: Ingresar 8 números</string>
+    <string name="ficha_tecnica">Ficha Técnica</string>
+
+    <string name="fail_sincro_login_online">Ocurrió un error al sincronizar</string>
+    <string name="login_primera_vez_offline">Debe conectarse a internet para validar el usuario y sincronizar la información</string>
+    <string name="internet_pedido_offline">Debe conectarse a internet para enviar el pedido.</string>
+
+    <string name="fail_sincro_login_offline">Debe conectarse a internet para sincronizar la información</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string name="condicion_2">Condición</string>
+    <string name="pedido_2">Pedido</string>
+
+    <string name="total">Total: </string>
+    <string name="grabar_finalizado">Grabar Finalizado</string>
+    <string name="nuevo_producto">Nuevo Producto</string>
+    <string name="enviando_pedido">Enviando Pedido...</string>
+    <string name="error_envio_pedido">Error al enviar pedido...</string>
+    <string name="error_descuentos">No puede agregar más de tres descuentos en un pedido</string>
+    <string name="termino_venta_requerido">Termino de venta es requerido.</string>
+    <string name="pedido_requerido">Los productos son requerido.</string>
+    <string name="letra_requerido">Al menos una letra es requerida.</string>
+</resources>

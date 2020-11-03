@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BaseActivity">
+    <!-- Search, should appear as action button -->
+
+    <item
+        android:id="@+id/action_search_producto"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_buscar"
+        android:showAsAction="ifRoom"
+        android:title="@string/buscar" />
+
+    <item
+        android:id="@+id/filtrar_stock"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="Filtrar" />
+
+    <item
+        android:id="@+id/ordenar_nombre_stock"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="Ordenar Por Nombre" />
+
+    <item
+        android:id="@+id/ordenar_clase_stock"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="Ordenar Por Clase" />
+
+    <item
+        android:id="@+id/ordenar_subclase_stock"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="Ordenar Por Sub Clase" />
+
+    <item
+        android:id="@+id/busqueda_avanzada_stock"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="Busqueda Avanzada" />
+
+    <item
+        android:id="@+id/busqueda_equivalencia_stock"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="Busqueda por Equivalencia" />
+
+</menu>

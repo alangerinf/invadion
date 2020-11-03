@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+
+        android:layout_marginRight="2dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:background="@color/celeste"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:background="@color/celeste"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:background="@color/celeste"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:background="@color/celeste"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:background="@color/celeste"
+            android:textColor="@color/blanco"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="2dp"
+        >
+
+        <EditText
+            android:id="@+id/txtFecha1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:textColor="@color/negro"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+
+            android:gravity="center"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="2dp"
+        >
+
+        <EditText
+            android:id="@+id/txtFecha6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:textColor="@color/negro"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+
+            android:gravity="center"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="2dp"
+        >
+
+        <EditText
+            android:id="@+id/txtFecha11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:textColor="@color/negro"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtFecha13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/negro"
+            android:inputType="number"
+
+            android:gravity="center"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/txtFecha15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editext_estilo"
+            android:padding="7dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:textColor="@color/negro"
+            android:inputType="number"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/cFechaSeleccionada" />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+   android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc.Producto"
+                android:textColor="@color/azul"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 %"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/negro"
+                android:id="@+id/tvDescDist"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc.Promoción"
+                android:textSize="15sp"
+                android:textColor="@color/azul"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 %"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/negro"
+                android:id="@+id/tvDescPro"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblcerrar"
+            android:layout_marginTop="15dp"
+            android:layout_width="180dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cerrar"
+            android:background="@color/rojo"
+            android:textColor="@color/blanco"
+            android:textSize="17sp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

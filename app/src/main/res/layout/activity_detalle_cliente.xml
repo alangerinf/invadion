@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lnDetalleCliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Nombre Cliente"
+            android:textColor="@color/negro"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtCodigoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Código Cliente"
+            android:textColor="@color/plomo_oscuro"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/blanco"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Linea disponible: "
+                    android:textColor="@color/plomo_regla" />
+
+                <TextView
+                    android:id="@+id/txtLineaDisponible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lldeuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDetalleDeuda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Deuda Total: "
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:id="@+id/txtDeudaTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text=""
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/plomo"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llcorriente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDetalleCorriente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Dueda Corriente: "
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:id="@+id/txtDeudaCorriente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llmorosa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDetalleMorosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Deuda Morosa: "
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:id="@+id/txtDeudaMorosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llletras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDetalleLetras"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Letras No Vencidas: "
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:id="@+id/txtDeudaLetras"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llvencida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDetalleVencidas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="Letras Vencidas: "
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:id="@+id/txtDeudaVencida"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+
+                    android:textColor="@color/negro" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@color/blanco"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Últimos pedidos"
+                android:textColor="@color/plomo_regla" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/plomo"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="LIN"
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="4"
+                    android:gravity="left"
+                    android:text="N° Documento"
+                    android:textColor="@color/celeste" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="F. Emis."
+                    android:textColor="@color/celeste" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="Saldo"
+                    android:textColor="@color/celeste" />
+
+
+            </LinearLayout>
+
+            <com.bitlicon.purolator.lib.ExpandibleListView
+                android:id="@+id/lvPedidos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </com.bitlicon.purolator.lib.ExpandibleListView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@color/blanco"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="6dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Últimas facturas"
+                android:textColor="@color/plomo_regla" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/plomo"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="LIN"
+                    android:textColor="@color/celeste" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="14"
+                    android:gravity="left"
+                    android:text="N° Documento"
+                    android:textColor="@color/celeste" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="8"
+                    android:gravity="left"
+                    android:text="F. Emis."
+                    android:textColor="@color/celeste" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="10"
+                    android:gravity="right"
+                    android:text="Saldo"
+                    android:textColor="@color/celeste" />
+
+
+            </LinearLayout>
+
+            <com.bitlicon.purolator.lib.ExpandibleListView
+                android:id="@+id/lvFacturas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </com.bitlicon.purolator.lib.ExpandibleListView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

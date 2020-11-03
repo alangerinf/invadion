@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="celeste">#2382b9</color>
+    <color name="blanco">#ffffff</color>
+    <color name="cremabottomclaro">#f37e00</color>
+    <color name="plomomenu">#8d8d8c</color>
+    <color name="azul">#00529c</color>
+    <color name="rojo">#ef3829</color>
+    <color name="plomo">#e4e4e4</color>
+    <color name="verdemil">#006600</color>
+    <color name="nombreCliente">#143e67</color>
+    <color name="codigoCliente">#9d9d9d</color>
+    <color name="plomo_regla">#c6c6c6</color>
+    <color name="plomo_oscuro">#7b7b7b</color>
+    <color name="negro">#313131</color>
+    <color name="plomo_oscuro_menu">#959595</color>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/plomo"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/editext_estilo"
+        android:hint="Precio de Producto"
+        android:inputType="numberDecimal"
+        android:padding="7dp"
+        android:singleLine="true" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etPrecio"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/lblCancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rojo"
+            android:gravity="center"
+            android:text="Cancelar"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/lblAgregar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/azul"
+            android:gravity="center"
+            android:text="Modificar"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

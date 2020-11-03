@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/blanco">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Linea"
+                android:textColor="@color/negro"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RadioButton
+                    android:id="@+id/rbPurolator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Purolator"
+                    android:textColor="@color/negro"
+                    android:checked="true"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFiltech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Filtech"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Condición"
+                android:textColor="@color/negro"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RadioButton
+                    android:id="@+id/radio_contado_adelantado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Contado adelantado"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_contado_contra_entrega"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Contado contra entrega"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_credito_letras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Crédito letras"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_credito_facturas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="Crédito facturas"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_otros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_margin="0dp"
+                    android:checked="false"
+                    android:padding="0dp"
+                    android:text="Otros"
+                    android:textColor="@color/negro"
+                    android:textSize="14sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descuentos"
+                android:textColor="@color/negro"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TableRow
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_descuento1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:checked="false"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_descuento2"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:checked="false"
+                        android:text="0 %"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_descuento3"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:checked="false"
+                        android:text="0 %"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp"
+
+
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_descuento4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:checked="false"
+                        android:text="Contado"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_descuento5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:layout_weight="0.7"
+                        android:checked="false"
+                        android:text="Otros"
+                        android:textColor="@color/negro"
+
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observaciones"
+                android:textColor="@color/negro"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/editext_estilo"
+                android:editable="false"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="2"
+                android:minLines="4"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:drawableRight="@android:drawable/ic_btn_speak_now"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

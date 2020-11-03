@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitlicon.purolator">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Include following permission if you load images from Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include following permission if you want to cache images on SD card -->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:name="com.bitlicon.purolator.ControlApplication">
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.MainActivity"
+            android:theme="@style/LoginTheme"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.ResumenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.ControlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.CloseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.ClienteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.AgregarClienteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.DetalleClienteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.EditarClienteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.PedidoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.DetalleFacturaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.AgregarPedidoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            >
+
+        </activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.FichaTecnicaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.DetalleDeudaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.FacturaResumenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.DeudaResumenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.bitlicon.purolator.activity.SeleccionDiaFacturaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.bitlicon.purolator.activity.CobranzaClienteActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OtherTheme"></activity>
+
+        <provider
+            android:name="com.bitlicon.purolator.contentprovider.ManagerContentProvider"
+            android:authorities="com.bitlicon.purolator.contentprovider" />
+    </application>
+
+</manifest>

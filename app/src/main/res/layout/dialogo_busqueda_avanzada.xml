@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtCampoBusquedaAvanzada"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/editext_estilo"
+        android:hint="@string/campo_de_busqueda"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+
+    <RadioGroup
+        android:id="@+id/lstOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombres"
+            android:textColor="@color/negro" />
+
+        <RadioButton
+            android:id="@+id/radio_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:textColor="@color/negro" />
+
+        <RadioButton
+            android:id="@+id/radio_ruc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ruc"
+            android:textColor="@color/negro" />
+
+        <RadioButton
+            android:id="@+id/radio_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/codigo"
+            android:textColor="@color/negro" />
+
+        <RadioButton
+            android:id="@+id/radio_dni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dni_solo"
+            android:textColor="@color/negro" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/plomo_oscuro">
+
+            <TextView
+                android:id="@+id/tvCancelarAvanzado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cancelar"
+                android:textColor="@color/blanco"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

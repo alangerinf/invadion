@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnDeudas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blanco"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/opt_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deuda Total"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/opt_corriente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deuda Corriente"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/opt_morosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deuda Morosa"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/opt_no_vencida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Letras No Vencidas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/opt_vencida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Letras Vencidas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnDocumentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/blanco"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/check_letras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Letras"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_boletas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boletas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_facturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facturas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_abono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota de Abono"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_cargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota de Cargo"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/grpFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/blanco">
+
+        <RadioButton
+            android:id="@+id/opt_Hoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoy"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/opt_Rango"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha Rango"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/grpVendedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blanco">
+
+        <RadioButton
+            android:id="@+id/opt_Vendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vendedor"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="FILTRAR"
+        android:textColor="@color/blanco"
+        android:textSize="18sp" />
+
+</LinearLayout>

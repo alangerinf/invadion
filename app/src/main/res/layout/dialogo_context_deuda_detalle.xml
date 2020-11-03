@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/plomo"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lnTipoDeuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <CheckBox
+            android:id="@+id/check_deudaTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deudatotal"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_deudaCorriente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deudacorriente"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_deudaMorosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deudamorosa"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_deudaVencida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deudavencida"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+        <CheckBox
+            android:id="@+id/check_deudaNoVencida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deudanovencida"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnDocumentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <CheckBox
+            android:id="@+id/check_letras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Letras"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_facturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facturas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_boletas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boletas"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_abono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota de Abono"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/check_cargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota de Cargo"
+            android:textColor="@color/negro"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnVendedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/blanco"
+        android:orientation="vertical"
+
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vendedor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVendedor"
+            android:inputType="number"
+            android:maxLength="3"
+            />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="FILTRAR"
+        android:textColor="@color/blanco"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<resources>
+
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:dialogTheme">@style/MyDialogTheme</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+        <item name="homeAsUpIndicator">@drawable/ic_sandwich</item>
+        <item name="android:actionMenuTextColor">@color/blanco</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <style name="OtherTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:dialogTheme">@style/MyDialogTheme</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+        <item name="homeAsUpIndicator">@drawable/ic_sandwich</item>
+        <item name="android:actionMenuTextColor">@color/blanco</item>
+        <item name="android:actionBarStyle">@style/OtherTheme.ActionBar</item>
+    </style>
+
+
+    <style name="OtherTheme.ActionBar" parent="android:Widget.Material.ActionBar">
+
+        <item name="android:background">@color/rojo</item>
+        <item name="android:backgroundSplit">@color/celeste</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="background">@color/rojo</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.Title</item>
+    </style>
+
+
+    <style name="AppTheme.ActionBar" parent="android:Widget.Material.ActionBar">
+        <item name="homeAsUpIndicator">@drawable/ic_sandwich</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_sandwich</item>
+        <item name="android:background">@color/rojo</item>
+        <item name="android:backgroundSplit">@color/celeste</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+        <item name="background">@color/rojo</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.Title</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Title" parent="android:TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+
+    <style name="LoginTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:dialogTheme">@style/MyDialogTheme</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+        <item name="android:textColor">@color/celeste</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+    </style>
+
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+
+
+</resources>
