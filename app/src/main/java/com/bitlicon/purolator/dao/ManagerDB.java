@@ -5,7 +5,6 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,7 +14,6 @@ import java.io.OutputStream;
 import static com.bitlicon.purolator.util.LogUtil.LOGW;
 
 public class ManagerDB extends SQLiteOpenHelper {
-
 
     /**
      * Nombre de la base de datos SQLite
@@ -40,7 +38,6 @@ public class ManagerDB extends SQLiteOpenHelper {
 
 
     private String DB_PATH = null;
-
 
     public ManagerDB(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -70,27 +67,10 @@ public class ManagerDB extends SQLiteOpenHelper {
         return helper;
     }
 
-    /**
-     * Devuelve la base de datos
-     *
-     * @return instancia de la base de datos
-     */
     public synchronized SQLiteDatabase getDb() {
         if ((db == null) || (!db.isOpen()))
             db = getWritableDatabase();
         return db;
-    }
-
-    /**
-     * Cierra las conexiones hacia la base de datos
-     */
-    @Override
-    public synchronized void close() {
-        super.close();
-        if (db != null) {
-            db.close();
-            db = null;
-        }
     }
 
     /**
@@ -100,6 +80,11 @@ public class ManagerDB extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase database) {
+        try {
+            createDataBase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

@@ -3,7 +3,6 @@ package com.bitlicon.purolator;
 import android.app.Application;
 import android.content.Context;
 import android.util.Log;
-
 import com.bitlicon.purolator.dao.ConfiguracionDAO;
 import com.bitlicon.purolator.entities.Configuracion;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -14,21 +13,19 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 /**
  * Created by EduardoAndrés on 07/12/2015.
  */
-public class ControlApplication extends Application
+public class AppController extends Application
 {
-    private static final String TAG=ControlApplication.class.getName();
+    private static final String TAG=AppController.class.getName();
     private Waiter waiter;  //Thread which controls idle time
 
     // only lazy initializations here!
     @Override
     public void onCreate()
     {
+        super.onCreate();
         ConfiguracionDAO ConfigDao = new ConfiguracionDAO(getApplicationContext());
         Configuracion Config = ConfigDao.Obtener();
-
         initImageLoader(this.getApplicationContext());
-
-        super.onCreate();
         Log.d(TAG, "Starting application" + this.toString());
         waiter=new Waiter(Config.TiempoSesion*60*1000, this);
         waiter.start();

@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.util.Log;
 
 import com.bitlicon.purolator.entities.Configuracion;
+
+import java.io.IOException;
+
 /**
  * Created by EduardoAndrés on 02/12/2015.
  */
@@ -30,9 +33,8 @@ public class ConfiguracionDAO {
         Configuracion config = null;
         Cursor cursor = null;
         ManagerDB db = ManagerDB.getInstance(context);
-        try
-        {
-            db.openDataBase();
+        db.openDataBase();
+        try {
             String SQL = "SELECT * FROM " + NOMBRE_TABLE + " LIMIT 1";
             cursor = db.getDataBase().rawQuery(SQL, null);
             if (cursor.moveToNext())
@@ -45,16 +47,10 @@ public class ConfiguracionDAO {
                 config.Fecha = cursor.getString(cursor.getColumnIndex(FECHA));
                 config.IGV = cursor.getDouble(cursor.getColumnIndex(IGV));
             }
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             Log.e("ObtenerConfig DAO", ex.getMessage(), ex);
             config = null;
             throw ex;
-        }
-        finally
-        {
-            db.close();
         }
         return config;
     }

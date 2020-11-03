@@ -5,11 +5,11 @@ import android.util.Log;
 
 import com.bitlicon.purolator.entities.Vendedor;
 import com.bitlicon.purolator.util.Constantes;
+import com.google.gson.Gson;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
-
-import org.apache.http.Header;
-import org.apache.http.entity.StringEntity;
+import cz.msebera.android.httpclient.Header;
+import cz.msebera.android.httpclient.entity.StringEntity;
 import org.json.JSONObject;
 
 /**
@@ -20,7 +20,7 @@ public class VendedorService {
     int estado = 0;
     Vendedor vendedor = null;
 
-    public Vendedor iniciarSesion(Context context, String user, String password) {
+    public Vendedor iniciarSesion(final Context context, String user, String password) {
         JSONObject jsonObject = new JSONObject();
         StringEntity entity = null;
         SyncHttpClient clientHttp;
@@ -54,6 +54,7 @@ public class VendedorService {
                 @Override
                 public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                     super.onFailure(statusCode, headers, responseString, throwable);
+                    Log.e("onFailure -> ",new Gson().toJson(throwable));
                     if (responseString.equalsIgnoreCase(Constantes.NULL)) {
                         vendedor.Resultado = Constantes.CREDENCIALES_INVALIDAS;
                         vendedor.Mensaje = "Credenciales inválidas";

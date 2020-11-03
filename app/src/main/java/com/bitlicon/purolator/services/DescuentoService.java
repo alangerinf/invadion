@@ -10,9 +10,8 @@ import com.bitlicon.purolator.parser.ProductoParser;
 import com.bitlicon.purolator.util.Constantes;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
-
-import org.apache.http.Header;
-import org.apache.http.entity.StringEntity;
+import cz.msebera.android.httpclient.Header;
+import cz.msebera.android.httpclient.entity.StringEntity;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

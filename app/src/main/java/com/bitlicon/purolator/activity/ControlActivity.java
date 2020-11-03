@@ -3,7 +3,7 @@ package com.bitlicon.purolator.activity;
 import android.app.Activity;
 import android.util.Log;
 
-import com.bitlicon.purolator.ControlApplication;
+import com.bitlicon.purolator.AppController;
 
 /**
  * Created by EduardoAndrés on 07/12/2015.
@@ -16,9 +16,9 @@ public class ControlActivity extends Activity
      * Gets reference to global Application
      * @return must always be type of ControlApplication! See AndroidManifest.xml
      */
-    public ControlApplication getApp()
+    public AppController getApp()
     {
-        return (ControlApplication )this.getApplication();
+        return (AppController)this.getApplication();
     }
 
     @Override

@@ -28,6 +28,7 @@ import com.bitlicon.purolator.entities.Vendedor;
 import com.bitlicon.purolator.lib.SessionManager;
 import com.bitlicon.purolator.util.Util;
 
+import java.io.IOException;
 import java.util.List;
 
 public class DetallePedidoFragment extends Fragment {

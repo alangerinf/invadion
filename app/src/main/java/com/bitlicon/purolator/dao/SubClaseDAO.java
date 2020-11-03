@@ -17,7 +17,6 @@ public class SubClaseDAO {
 
     public static final String CODIGO = "Codigo";
     public static final String NOMBRE = "Nombre";
-
     private static String NOMBRE_TABLE = "SubClase";
     private Context context;
 

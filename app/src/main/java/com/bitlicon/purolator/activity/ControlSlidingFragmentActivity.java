@@ -2,7 +2,7 @@ package com.bitlicon.purolator.activity;
 
 import android.util.Log;
 
-import com.bitlicon.purolator.ControlApplication;
+import com.bitlicon.purolator.AppController;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 
 /**
@@ -16,9 +16,9 @@ public class ControlSlidingFragmentActivity extends SlidingFragmentActivity {
      * Gets reference to global Application
      * @return must always be type of ControlApplication! See AndroidManifest.xml
      */
-    public ControlApplication getApp()
+    public AppController getApp()
     {
-        return (ControlApplication )this.getApplication();
+        return (AppController)this.getApplication();
     }
 
     @Override
