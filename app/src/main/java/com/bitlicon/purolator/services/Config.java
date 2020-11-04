@@ -1,7 +1,7 @@
 package com.bitlicon.purolator.services;
 
 public class Config {
-    public final static String SERVICE_URL = "http://service.purolator.com.pe.white.mysitehosted.com/";
+    public final static String SERVICE_URL = "http://service.purolator.com.pe.143-95-38-195.rs1.avxwin.temp.domains/";
     public final static String WS_CLIENTE = "ClienteWS.svc/";
     public final static String WS_FACTURA = "FacturaWS.svc/";
     public final static String WS_VENDEDOR = "VendedorWS.svc/";

@@ -135,8 +135,7 @@ public class ManagerDB extends SQLiteOpenHelper {
     }
 
     public void createDataBase() throws IOException {
-        boolean isExisteDb = isDataBaseExist();
-        if (!isExisteDb) {
+        if (!isDataBaseExist()) {
             this.getReadableDatabase();
             try {
                 copyDataBase();
@@ -154,7 +153,7 @@ public class ManagerDB extends SQLiteOpenHelper {
     public void openDataBase() throws SQLException {
         String myPath = DB_PATH + DATABASE_NAME;
         db = SQLiteDatabase.openDatabase(myPath, null,
-                SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+                SQLiteDatabase.CREATE_IF_NECESSARY);
     }
 
     public void beginTransaction() {
