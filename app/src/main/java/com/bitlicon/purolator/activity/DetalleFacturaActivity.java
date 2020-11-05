@@ -42,7 +42,7 @@ public class DetalleFacturaActivity extends ControlFragmentActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case android.R.id.home:
+            case R.id.action_cancelar:
                 DetalleFacturaActivity.super.onBackPressed();
                 break;
             case R.id.action_nuevo:

@@ -2,7 +2,6 @@ package com.bitlicon.purolator.services;
 
 import android.content.ContentValues;
 import android.content.Context;
-
 import com.bitlicon.purolator.contentprovider.ManagerContentProvider;
 import com.bitlicon.purolator.dao.BaseDAO;
 import com.bitlicon.purolator.entities.Equivalencia;

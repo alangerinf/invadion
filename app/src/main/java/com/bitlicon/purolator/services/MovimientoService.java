@@ -2,22 +2,17 @@ package com.bitlicon.purolator.services;
 
 import android.content.ContentValues;
 import android.content.Context;
-
 import com.bitlicon.purolator.contentprovider.ManagerContentProvider;
 import com.bitlicon.purolator.dao.BaseDAO;
 import com.bitlicon.purolator.parser.MovimientoParser;
 import com.bitlicon.purolator.util.Constantes;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
-
 import cz.msebera.android.httpclient.Header;
 import cz.msebera.android.httpclient.entity.StringEntity;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-/**
- * Created by dianewalls on 22/05/2015.
- */
 public class MovimientoService {
     Boolean resultado;
     Context context;
