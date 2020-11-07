@@ -99,7 +99,7 @@ public class PedidosFragment extends Fragment implements View.OnClickListener{
             ConfiguracionDAO ConfDAO = new ConfiguracionDAO(getActivity());
             Configuracion Conf = ConfDAO.Obtener();
 
-            LimitesFecha limitesFecha = new LimitesFecha().invoke(opcion,Conf.Fecha);
+            LimitesFecha limitesFecha = new LimitesFecha().LimitesFecha(opcion,Conf.Fecha);
             Calendar calendarInicio = limitesFecha.getCalendarInicio();
             Calendar calendarFin = limitesFecha.getCalendarFin();
 

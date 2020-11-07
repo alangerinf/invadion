@@ -32,7 +32,7 @@ public class ClienteDAO {
     public static final String DESPACHO = "Despacho";
     public static final String GIRO = "Giro";
     public static final String REPRESENTANTE_LEGAL = "RepresentanteLegal";
-    private static String NOMBRE_TABLE = "Cliente";
+    private static final String NOMBRE_TABLE = "Cliente";
     public static final String NOMBRE_TABLE_MOVIMIENTO = "Movimiento";
     private Context context;
 

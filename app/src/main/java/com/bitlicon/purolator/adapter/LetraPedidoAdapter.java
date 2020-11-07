@@ -15,8 +15,6 @@ import java.util.List;
 
 public class LetraPedidoAdapter extends ArrayAdapter<LetraPedido> {
 
-
-
     public LetraPedidoAdapter(Context context, List<LetraPedido> letraPedidos) {
         super(context, 0, letraPedidos);
         // TODO Auto-generated constructor stub
@@ -55,6 +53,5 @@ public class LetraPedidoAdapter extends ArrayAdapter<LetraPedido> {
         TextView tvNumero;
         TextView tvDia;
         TextView tvFecha;
-
     }
 }

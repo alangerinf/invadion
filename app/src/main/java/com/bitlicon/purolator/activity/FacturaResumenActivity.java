@@ -1,9 +1,6 @@
 package com.bitlicon.purolator.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
@@ -77,7 +74,7 @@ public class FacturaResumenActivity extends ControlActivity {
         ConfiguracionDAO ConfDAO = new ConfiguracionDAO(getApplicationContext());
         Configuracion Conf = ConfDAO.Obtener();
 
-        LimitesFecha limitesFecha = new LimitesFecha().invoke(opcion,Conf.Fecha);
+        LimitesFecha limitesFecha = new LimitesFecha().LimitesFecha(opcion,Conf.Fecha);
         Calendar calendarInicio = limitesFecha.getCalendarInicio();
         Calendar calendarFin = limitesFecha.getCalendarFin();
 

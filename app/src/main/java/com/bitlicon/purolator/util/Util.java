@@ -81,28 +81,24 @@ public final class Util {
 
     public static String formatoFechaQuery(Date fecha) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Log.d("FechaQuery", sdf.format(fecha));
         return sdf.format(fecha);
     }
 
     public static String getFechaHoyQuery() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String fecha = sdf.format(new Date());
-        Log.d("FechaQuery", fecha);
         return fecha;
     }
 
     public static String getFechaHoyQueryEspanol() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyyy");
         String fecha = sdf.format(new Date());
-        Log.d("FechaQuery", fecha);
         return fecha;
     }
 
     public static String getFechaHoyQueryHora() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM HH:mm");
         String fecha = sdf.format(new Date());
-        Log.d("FechaQuery", fecha);
         return fecha;
     }
 

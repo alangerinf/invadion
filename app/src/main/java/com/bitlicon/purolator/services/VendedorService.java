@@ -6,6 +6,7 @@ import android.util.Log;
 import com.bitlicon.purolator.entities.Vendedor;
 import com.bitlicon.purolator.util.Constantes;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
 import cz.msebera.android.httpclient.Header;

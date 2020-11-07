@@ -17,7 +17,7 @@ public class LimitesFecha {
         return calendarFin;
     }
 
-    public LimitesFecha invoke(int opcion,String Fecha) {
+    public LimitesFecha LimitesFecha(int opcion, String Fecha) {
         calendarInicio = Calendar.getInstance();
         calendarFin = Calendar.getInstance();
         String myFormat = "dd/MM/yy";
@@ -30,8 +30,6 @@ public class LimitesFecha {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
-
 
         //TODO Comentar o retirar
         //calendarFin.set(Calendar.MONTH, Calendar.FEBRUARY);

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -161,7 +162,7 @@ public class LoginFragment extends Fragment {
 
     };
 
-    private Handler handler = new Handler() {
+    private Handler handler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
 
@@ -291,7 +292,7 @@ public class LoginFragment extends Fragment {
         Toast.makeText(getActivity(), mensaje, Toast.LENGTH_LONG).show();
     }
 
-    private void validarUsuario(final String usuario, final String password) {
+    public void validarUsuario(final String usuario, final String password) {
 
         for (int i = 0; i < tabla.length; i++)
         {
