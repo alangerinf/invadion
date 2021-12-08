@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/plomo"
+    android:fillViewport="true"
     android:orientation="vertical">
 
 
@@ -19,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
             android:text="Nombre Cliente"
             android:textColor="@color/negro"
@@ -31,8 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center_horizontal"
             android:text="Código Cliente"
             android:textColor="@color/plomo_oscuro"
@@ -45,10 +46,10 @@
             android:layout_marginRight="7dp"
             android:background="@color/blanco"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
             android:paddingLeft="7dp"
+            android:paddingTop="4dp"
             android:paddingRight="7dp"
-            android:paddingTop="4dp">
+            android:paddingBottom="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,8 +60,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Linea disponible: "
                     android:textColor="@color/plomo_regla" />
 
@@ -70,8 +71,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
 
                     android:textColor="@color/negro" />
             </LinearLayout>
@@ -88,8 +89,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Deuda Total: "
                     android:textColor="@color/celeste" />
 
@@ -99,8 +100,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text=""
 
                     android:textColor="@color/negro" />
@@ -124,8 +125,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Dueda Corriente: "
                     android:textColor="@color/celeste" />
 
@@ -135,8 +136,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
 
                     android:textColor="@color/negro" />
             </LinearLayout>
@@ -153,8 +154,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Deuda Morosa: "
                     android:textColor="@color/celeste" />
 
@@ -164,8 +165,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
 
                     android:textColor="@color/negro" />
             </LinearLayout>
@@ -182,8 +183,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Letras No Vencidas: "
                     android:textColor="@color/celeste" />
 
@@ -193,8 +194,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
 
                     android:textColor="@color/negro" />
             </LinearLayout>
@@ -211,8 +212,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
                     android:text="Letras Vencidas: "
                     android:textColor="@color/celeste" />
 
@@ -222,8 +223,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:paddingBottom="6dp"
                     android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
 
                     android:textColor="@color/negro" />
             </LinearLayout>
@@ -234,15 +235,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
             android:layout_marginTop="4dp"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:background="@color/blanco"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
             android:paddingLeft="7dp"
+            android:paddingTop="6dp"
             android:paddingRight="7dp"
-            android:paddingTop="6dp">
+            android:paddingBottom="2dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -253,18 +254,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:background="@color/plomo"></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
+                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingTop="5dp">
+                android:paddingBottom="5dp">
 
                 <TextView
                     android:layout_width="0dp"
@@ -324,15 +325,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
             android:layout_marginTop="4dp"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:background="@color/blanco"
             android:orientation="vertical"
-            android:paddingBottom="2dp"
             android:paddingLeft="7dp"
+            android:paddingTop="6dp"
             android:paddingRight="7dp"
-            android:paddingTop="6dp">
+            android:paddingBottom="2dp">
 
 
             <TextView
@@ -344,18 +345,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:background="@color/plomo"></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
+                android:paddingTop="5dp"
                 android:paddingRight="10dp"
-                android:paddingTop="5dp">
+                android:paddingBottom="5dp">
 
                 <TextView
 
